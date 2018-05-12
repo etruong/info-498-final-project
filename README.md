@@ -1,6 +1,7 @@
 ---
-title: "Final Project Proposal: UW Resilience Lab Poster"
+title: "UW Resilience Lab Poster Project Proposal"
 author: "Elisa Truong, Hayden Hong, Kassandra Franco, Jared Praino"
+
 ---
 
 
@@ -16,12 +17,12 @@ author: "Elisa Truong, Hayden Hong, Kassandra Franco, Jared Praino"
 
 - What other research has been done in this area? Make sure to include 3+ links to related works.  
 
-    - There hasn’t been much research about “micro-compassion” to combat microaggression, thus we focused a lot of our background research on microaggression in general since microaggression is a distal factor in someone’s health including what we are ultimately addressing when it comes to the effectiveness of the signs. In one research study, they evaluated the perception of microaggressions in the classroom by teachers and students, and the effectiveness of an authoritative figure to address microaggression. In another study, researchers evaluated and measured the racial microaggression experienced in the University of Illinois by students through a survey.
+    - There hasn’t been much research about “micro-compassion” to combat microaggression, thus we focused a lot of our background research on microaggression in general since microaggression is a distal factor in someone’s health including what we are ultimately addressing when it comes to the effectiveness of the signs. In one research study, they evaluated the perception of microaggressions in the classroom by teachers and students, and the effectiveness of an authoritative figure to address microaggression. In another study, researchers evaluated and measured the racial microaggression experienced in the University of Illinois by students through a survey. The rest of the resources describe where microaggression stems from as well as how people should approach microaggression.
 
-  1. https://www.tandfonline.com/doi/abs/10.1080/87567555.2012.654831 
-  2. http://www.racialmicroaggressions.illinois.edu/files/2015/03/RMA-Classroom-Report.pdf 
-  3. http://www.apa.org/monitor/2017/01/microaggressions.aspx 
-  4. https://www.psychologytoday.com/us/blog/culturally-speaking/201711/are-racial-microaggressions-college-campuses-harmful 
+    1. https://www.tandfonline.com/doi/abs/10.1080/87567555.2012.654831 
+    2. http://www.racialmicroaggressions.illinois.edu/files/2015/03/RMA-Classroom-Report.pdf 
+    3. http://www.apa.org/monitor/2017/01/microaggressions.aspx 
+    4. https://www.psychologytoday.com/us/blog/culturally-speaking/201711/are-racial-microaggressions-college-campuses-harmful 
 
 
 ### III. Dataset
@@ -29,7 +30,7 @@ author: "Elisa Truong, Hayden Hong, Kassandra Franco, Jared Praino"
 - What is the dataset you'll be working with?
 
     - Our group will be collecting data on the effectiveness of the resilience signs through a survey, thus our dataset that we will be working with will be our own.
-
+    
 - Please include background on who collected the data, where you accessed it, and any additional information we should know about how this data came to be.
 
     - We are college students at the University of Washington conducting a survey to discover the effectiveness of the resilience signs placed throughout campus during Winter and the beginning of Spring quarter. This survey was conducted as a final project for a population health informatics class (INFO 498); the project was to define, explore, and answer a question about a public health topic. The survey is 23 questions with 2 sections: a demographics and a resilience sign section. We will measure the effectiveness of the resilience signs towards achieving the UW resilience objective: to promote compassion on campus to address the microaggressions experienced by students. This will be determined by asking several questions focused around how the students felt after viewing the signs.Some of these questions were “Did the signs change how you feel?” and based on their answer of “yes,” the description that they gave for why they were feeling what they were feeling would determine its effectiveness 
@@ -44,12 +45,14 @@ author: "Elisa Truong, Hayden Hong, Kassandra Franco, Jared Praino"
     - Our main target audiences would be the Resilience Lab, as they were the main implementers of the intervention, and may want feedback and evaluation regarding it so they can better scope out how to improve future iterations of the intervention.
 
 
-
 ### Objectives
 
 - What should your audience learn from your resource? Please list out at least 3 specific questions that your project will answer for your audience.
+    
     - We want our audience, the Resilience Lab, to be able to use our resource to gain more understanding on the strength and impact of their intervention. Ideally, they would gain insight from our resource and use it to inform their next steps (what should be changed, what should be added, etcetera).
+    
     - Here are specific questions that our project will answer for our audience:
+        
         - Do UW students typically perceive these signs as positive or negative?
         - What is the effect of seeing the signs first on the UW Memes for Boundless Teens as opposed to seeing them on campus first?
         - Is there a correlation between a student’s rating of their own mental health and a perception of the signs?
