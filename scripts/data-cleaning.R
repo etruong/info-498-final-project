@@ -153,6 +153,6 @@ data$minor[data$minor=='urban design and planning'] <- 'Urban Planning'
 unique(data$first_word)
 unique(data$major)
 unique(data$minor)
+
+data$location_see[data$location_see=='First saw it on the meme page, then started noticing it on campus'] <- 'Facebook Meme Page'
 write.csv(data,"./data/prep-survey-response.csv")
-
-
