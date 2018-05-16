@@ -15,20 +15,25 @@ my.ui <- fluidPage (
                 # Limitations
               ),
               
-              tabPanel ("Experience Microaggression/Microcompassion"
-                        
+              tabPanel ("Experience Microaggressions and Microcompassions"
+                # Kassy is doing this
               ),
               
               tabPanel ("Perception of Signs"
                 # Hayden WordCloud
               ),
-              
-              tabPanel (""
-                        
+
+              tabPanel ("Effectiveness Evaluation"
+                # Elisa and Jared will work on
+                # two different visualizations
+              ),
+            
+              tabPanel ("Conclusions"
+                # What we got from the data
+                # What we recommend for the future of the Resilience Lab
+                # (or other intervention entitities on campus)
               )
-              
   )
-  
 )
 
 # Word Cloud
