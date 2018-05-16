@@ -8,4 +8,4 @@ col.name <- c ("timestamp", "first_word", "gender", "ethnicity", "age", "school"
                "effective")
 colnames (data) <- col.name
 
-write.csv ("data/prep-survey-response.csv")
+write.csv(data,"./data/prep-survey-response.csv")

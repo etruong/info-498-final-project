@@ -1,0 +1,142 @@
+"","timestamp","first_word","gender","ethnicity","age","school","major","minor","mental_health","microaggression","microcompassion","memes","first_see","location_see","link","feel_change","feel_change_explain","uplift","discourage","behavior_change","behavior_change_explain","talk_sign","talk_sign_explain","effective"
+"1","5/11/2018 19:02:32","Sarcastic ","Male","Asian, Caucasian",21,"Third Year","Informatics","",2,1,2,"Yes","Yes","On Campus","Yes","No","",2,1,"No","","Yes","We talked about how they were kind of funny",3
+"2","5/12/2018 23:14:36","no","Female","Asian",21,"Third Year","CSE","",3,2,1,"Yes","Yes","On Campus","No","No","",1,1,"No","","Yes","Memes make them look bad",1
+"3","5/12/2018 23:15:08","Fake","Female","Asian",21,"Third Year","Business","",5,3,3,"Yes","Yes","On Campus","No","Yes","Negative",1,4,"No","Negative","Yes","Jokes",1
+"4","5/12/2018 23:15:46","TRUE","Male","Asian",21,"Third Year","Biochemsitry ","",4,3,4,"Yes","Yes","On Campus","Yes","Yes","more confident ",3,1,"No","","No","",4
+"5","5/12/2018 23:21:25","No","Female","Asian",21,"Third Year","Philosophy","Informatics",2,3,3,"Yes","Yes","On Campus","No","Yes","More depressed and cynical",1,4,"Yes","Trying to focus less on my reactions and focus more on intentions","Yes","They seem to leave people more bitter than anything",2
+"6","5/12/2018 23:23:51","Bee","Female","Asian",20,"Second Year","Economic","Nutrition",4,2,4,"Yes","Yes","On Campus","No","Yes","They remind me to have a positive outlook on life",4,1,"Yes","I was more optimistic","No","",5
+"7","5/12/2018 23:26:32","Productivity","Female","Asian, Caucasian",20,"Second Year","Statistics, Economics","Mathematics",4,2,4,"Yes","Yes","On Campus","No","No","",2,2,"No","","Yes","(I don’t want to be rude at all I promise!) but the only time I have talked about the signs is about how they’re naive and unhelpful ",1
+"8","5/12/2018 23:36:43","Worth","Male","Asian, Caucasian",21,"Third Year","Physics","",5,1,3,"Yes","Yes","On Campus","No","No","",1,1,"No","","No","",2
+"9","5/12/2018 23:36:47","business","Male","Asian",19,"Second Year","Informatics","",2,5,1,"Yes","Yes","On Campus","No","Yes","They made me feel empowered and happy about myself.",4,1,"Yes","I became friendlier afterwards because I was in a better mood.","No","",4
+"10","5/12/2018 23:47:33","FALSE","Male","Asian",19,"Second Year","Civil Engineering","",3,1,5,"Yes","Yes","On Campus","No","No","",2,4,"No","","No","",2
+"11","5/12/2018 23:48:56","Busy","Male","Asian, Caucasian",19,"Second Year","Chemical Engineering","Mathematics",4,3,3,"No","Yes","On Campus","No","No","",3,2,"No","","No","",4
+"12","5/12/2018 23:53:35","Inspiration","Female","Asian",21,"Third Year","Medical Anthropology and Global Health","Chemistry/Microbiology possibly ",4,1,4,"Yes","Yes","On Campus","No","No","",3,3,"Unsure","","No","",2
+"13","5/13/2018 0:23:56","TRUE","Male","Asian",20,"Second Year","EDUCATION","",3,1,3,"No","Yes","On Campus","No","No","",1,2,"No","","No","",1
+"14","5/13/2018 0:45:24","busy","Female","Caucasian",22,"Fourth Year","industrial design","",4,1,3,"Yes","Yes","On Campus","No","No","",2,1,"No","","No","",3
+"15","5/13/2018 0:54:56","Confused","Female","Asian",19,"Second Year","Informatics","",4,3,3,"Yes","Yes","Facebook Meme Page","No","No","",2,1,"No","","No","",2
+"16","5/13/2018 0:57:10","grammar","Female","Asian",22,"Graduate","Sociology","",4,4,5,"No","Yes","On Campus","No","No","",4,1,"Unsure","It didn't","No","",4
+"17","5/13/2018 1:24:16","Really?","Male","Asian",20,"Third Year","Computer Science","",4,2,3,"Yes","Yes","On Campus","No","No","",1,3,"No","","No","",1
+"18","5/13/2018 7:03:32","Business","Male","Caucasian",30,"Graduate","Economics","History",4,2,3,"No","Yes","On Campus","No","Yes","A small positive boost",2,1,"Unsure","I might of smiled and felt encouraged/inspired for a moment","No","",3
+"19","5/13/2018 8:05:44","Sure","Female","Asian",21,"Third Year","Psychology","Informatics",5,2,4,"Yes","Yes","On Campus","No","No","",3,3,"No","","No","",3
+"20","5/13/2018 8:26:27","Thoughtful","Male","Caucasian",21,"Third Year","Civil Engineering","",4,1,3,"Yes","Yes","On Campus","No","Yes","",2,1,"No","","No","",3
+"21","5/13/2018 9:15:24","wording?","Female","Asian",18,"First Year","idk","",3,3,3,"Yes","Yes","On Campus","No","No","",3,3,"No","","No","",3
+"22","5/13/2018 11:44:03","Why","Male","Caucasian",22,"Fourth Year","Electrical engineering","",5,3,3,"Yes","Yes","Facebook Meme Page","No","No","",3,3,"No","","Yes","I talked about the meems they created",2
+"23","5/13/2018 11:46:25","Meme","Male","Asian",21,"Fourth Year","","Electrical engineering ",2,1,4,"Yes","Yes","On Campus","No","No","",1,3,"No","","Yes","Memes",1
+"24","5/13/2018 11:49:38","Thanks","","",NA,"","","",4,1,4,"No","Yes","On Campus","No","No","",2,1,"No","","No","",3
+"25","5/13/2018 11:51:25","busyness","Female","Asian",22,"Fourth Year","Electrical Engineering","",3,2,3,"Yes","Yes","Facebook Meme Page","No","No","",1,1,"No","","Yes","Look at this sign. ",1
+"26","5/13/2018 11:55:27","Confusion","Male","Caucasian",21,"Fourth Year","Electrical engineering","",5,3,2,"Yes","Yes","On Campus","No","Yes","Made me smile and laugh",4,1,"Unsure","","Yes","If they had noticed the signs",3
+"27","5/13/2018 11:58:11","Useless","Female","Asian",23,"Fourth Year","EE","",5,2,4,"No","Yes","On Campus","No","No","",2,4,"Unsure","","No","",2
+"28","5/13/2018 12:05:41","Kinda","Female","Caucasian",21,"Third Year","Engineering","",2,2,4,"Yes","Yes","On Campus","No","Yes","If anything, these signs were discouraging. It felt ingenuine to be encouraged to deal with your own mental health by a sign that could offer you nothing else.",1,3,"No","","No","",3
+"29","5/13/2018 12:54:31","Pft","Prefer not to say","Prefer not to answer",NA,"","","",NA,3,3,"No","Yes","On Campus","No","No","",1,5,"No","","No","",1
+"30","5/13/2018 12:56:35","Cheesy","Male","Asian",22,"Fourth Year","Electrical engineering","",4,2,3,"Yes","Yes","On Campus","No","No","",1,3,"No","","No","",2
+"31","5/13/2018 13:01:45","busyness","Male","Caucasian",23,"Fifth year","Electrical Engineering","",2,3,3,"Yes","Yes","On Campus","No","No","",1,1,"No","","Yes","People have joked about them",1
+"32","5/13/2018 13:02:58","why","Male","Asian",22,"Fourth Year","EE","",4,1,4,"Yes","Yes","On Campus","No","No","",2,1,"No","","No","",2
+"33","5/13/2018 13:08:06","Nice  ","Female","Asian",22,"Fourth Year","Bio","Classics ",3,1,4,"Yes","Yes","On Campus","No","No","",3,1,"No","","No","",3
+"34","5/13/2018 13:12:36","TRUE","Female","Caucasian",21,"Fourth Year","Spanish","",3,1,4,"Yes","No","","","","",NA,NA,"","","","",NA
+"35","5/13/2018 13:22:04","rhyme","Male","Asian",22,"Fourth Year","Electrical Engineering","Latin",5,1,4,"Yes","Yes","On Campus","No","No","",2,3,"No","","No","",2
+"36","5/13/2018 13:38:35","Snowflake","Male","Asian",21,"Fourth Year","Electrical Engineering","Film",5,1,5,"Yes","Yes","On Campus","No","No","",1,1,"No","","No","",3
+"37","5/13/2018 13:51:53","Stressolympics","Female","Asian",18,"","Public health","",3,2,4,"Yes","No","","","","",NA,NA,"","","","",NA
+"38","5/13/2018 13:57:24","cheesy","Female","Caucasian",19,"First Year","Public health","global health",2,3,3,"No","Yes","On Campus","No","No","",1,2,"No","","No","",1
+"39","5/13/2018 14:04:38","Comforting","Female","Asian, Caucasian",20,"Third Year","Public Health","",2,3,2,"Yes","Yes","On Campus","No","No","",3,1,"No","","No","",3
+"40","5/13/2018 14:35:57","stop ","Female","Asian",20,"Third Year","English and Marketing ","",2,1,4,"Yes","Yes","Facebook Meme Page","No","No","",3,4,"No","","Yes","If it seemed meme-able or affirmatively against my daily experience. ",3
+"41","5/13/2018 16:46:24","Bullshit","Male","Asian",21,"Fourth Year","Electrical Engineering","",2,4,3,"Yes","Yes","On Campus","No","No","",2,3,"No","","No","",3
+"42","5/13/2018 18:23:59","Conflicted","Non-binary","Asian",23,"Fifth year","Public health","",3,5,3,"Yes","Yes","On Campus","No","No","",1,4,"No","","Yes","Contracting to the institution's systems and culture",2
+"43","5/13/2018 21:31:26","business","Female","Caucasian",21,"Fourth Year","Informatics","",5,2,4,"Yes","Yes","On Campus","No","No","",2,3,"No","","Yes","I encouraged them to do a project about them",3
+"44","5/14/2018 0:51:24","Encouragement","Male","Asian",21,"Third Year","Sociology","Informatics",4,3,4,"Yes","Yes","On Campus","No","No","",3,1,"Unsure","","No","",4
+"45","5/14/2018 8:20:48","Fake","Male","Caucasian",21,"Third Year","Geography","Informatics",3,1,3,"Yes","Yes","On Campus","No","No","",2,2,"Unsure","","No","",2
+"46","5/14/2018 8:30:08","Nope","Male","Asian",22,"Fourth Year","International Studies","Informatics",3,1,4,"No","Yes","On Campus","No","No","",1,2,"Unsure","","No","",2
+"47","5/14/2018 9:04:45","Good","Female","Caucasian",28,"Third Year","Informatics","Math",4,4,4,"No","No","","","","",NA,NA,"","","","",NA
+"48","5/14/2018 9:08:39","worth","Female","Asian",20,"Third Year","Accounting and Finance","",4,2,3,"Yes","Yes","On Campus","No","No","",4,3,"Unsure","","Yes","That they were featured on the UW Meme page, and how they tended to have the opposite effect than originally hoped by the creators",2
+"49","5/14/2018 9:11:15","Awkward","Male","Asian",22,"Graduate","Information Management","",2,2,4,"Yes","Yes","First saw it on the meme page, then started noticing it on campus","No","No","",2,1,"Unsure","","No","",2
+"50","5/14/2018 9:13:09","UW","Male","Asian, Caucasian",22,"Fourth Year","Human-Centered Design & Engineering","Informatics",4,2,3,"Yes","Yes","On Campus","No","No","",3,1,"No","","No","",2
+"51","5/14/2018 9:15:25","Lies","Male","Asian, Pacific Islander",23,"Third Year","GeoPhyics","",4,3,4,"No","Yes","Facebook Meme Page","No","No","",2,3,"No","Minimal Change","No","",3
+"52","5/14/2018 9:31:25","Busy","Female","Asian",23,"Second Year","Biochemistry","",2,3,4,"Yes","Yes","On Campus","No","Yes","Made me happier",4,2,"Yes","Mood changed from bad to good","No","",4
+"53","5/14/2018 9:32:32","Boundless ","Female","Asian",19,"Second Year","Informatics ","",5,1,4,"Yes","Yes","On Campus","No","Yes","Felt better about myself",4,2,"No","","No","",3
+"54","5/14/2018 9:33:14","Stressed","Male","Pacific Islander, Filipino ",18,"First Year","Pre-Nursing","",3,4,3,"Yes","Yes","On Campus","No","No","",1,3,"No","","Yes","Just critiqued them",1
+"55","5/14/2018 9:37:18","fake","Male","Asian",21,"Third Year","Informatics","Informatics",5,2,3,"Yes","Yes","On Campus","No","No","",3,1,"No","","No","",2
+"56","5/14/2018 9:40:09","Validated","Female","Caucasian",21,"Third Year","Public health","",3,2,4,"Yes","Yes","On Campus","No","Yes","It kind of reminded me to reflect on my strengths and current successes instead of comparing myself to how others around me are doing, as well as reminding myself that my worth is not based on my school performance no matter how much I may feel that way",4,2,"Yes","I think seeing them often might help change my thought patterns about myself ","No","",5
+"57","5/14/2018 9:46:09","Busy","Female","Asian",24,"Fifth year","Informatics","Diversity",3,5,3,"Yes","Yes","Facebook Meme Page","No","Yes","At least the UW knows how stressful it is to be a student at the UW.",3,2,"Unsure","I don't think it changed.","No","",3
+"58","5/14/2018 9:48:43","Busy","Female","Caucasian",20,"Third Year","Business","",5,2,4,"Yes","Yes","On Campus","No","No","",3,1,"No","","No","",3
+"59","5/14/2018 9:50:53","What?","Male","Asian",21,"Third Year","Informatics","",5,1,3,"Yes","No","","","","",NA,NA,"","","","",NA
+"60","5/14/2018 9:51:18","Business","Non-binary","Filipino",20,"Third Year","Public Health","Diversity",2,3,2,"Yes","Yes","On Campus","No","Yes","On particularly bad days, they lifted my spirits.",4,1,"Yes","The rest of my walk to class was with a smile.","No","",1
+"61","5/14/2018 9:52:45","Advertisement","Male","Asian, Caucasian",22,"Fifth year","Informatics & Business","",3,2,3,"Yes","Yes","On Campus","No","No","",1,1,"No","","No","",1
+"62","5/14/2018 10:00:46","TRUE","Female","Asian",22,"Fifth year","Informatics","",4,4,3,"Yes","Yes","On Campus","No","No","",3,1,"Unsure","","No","",3
+"63","5/14/2018 10:04:09","okay","Female","Asian",19,"Second Year","Psychology","",3,3,3,"Yes","Yes","On Campus","No","Yes","It made me feel happy momentarily.",4,1,"No","","Yes","I talked about how the signs are getting ruined by the memes. I thought they were really positive, but it happens.",2
+"64","5/14/2018 10:28:16","Oh","Female","Asian, Caucasian",22,"Fourth Year","Info","",4,1,3,"Yes","Yes","On Campus","No","No","",2,1,"No","","No","",1
+"65","5/14/2018 10:30:52","Wholesome","Male","Asian",21,"Third Year","Neuroscience","CHID",4,4,3,"No","Yes","On Campus","No","Yes","They made me feel a little better because people are trying to help others with encouraging messages.",4,2,"Yes","They reminded me to stop worrying. ","Yes","I hope people don't make fun of these.",4
+"66","5/14/2018 10:31:32","Warm?","Female","Asian",19,"Second Year","HCDE","Urban design and planning",4,1,4,"No","Yes","On Campus","No","Yes","",4,1,"Unsure","","No","",4
+"67","5/14/2018 10:43:33","fake","Female","Caucasian",20,"Second Year","Aquatic and Fisheries","",4,2,4,"Yes","Yes","Facebook Meme Page","No","No","",4,2,"Unsure","","No","",3
+"68","5/14/2018 10:51:56","worth","Female","Asian",21,"Third Year","International studies","spanish",4,4,3,"Yes","Yes","On Campus","No","No","",3,1,"No","N/A","No","",3
+"69","5/14/2018 10:56:41","Sure","Male","Asian",20,"Third Year","Applied Math, Informatics","",5,1,3,"No","Yes","On Campus","No","No","",2,2,"No","","No","",3
+"70","5/14/2018 10:56:43","Busy","Male","Asian",19,"First Year","Business","",5,1,3,"No","Yes","On Campus","No","No","",3,3,"No","","No","",3
+"71","5/14/2018 10:57:29","Worthiness","Female","Asian",20,"First Year","Bioengineering","",4,2,2,"No","No","","","","",NA,NA,"","","","",NA
+"72","5/14/2018 10:57:52","busy","Prefer not to say","Asian",23,"Fourth Year","ChemE","",5,4,3,"Yes","Yes","On Campus","Yes","No","",4,3,"No","","No","",2
+"73","5/14/2018 10:58:28","encourage","Female","Asian",19,"First Year","economics","none",4,4,4,"Yes","Yes","On Campus","Yes","No","",4,4,"No","","No","",4
+"74","5/14/2018 11:00:34","TRUE","Male","Asian",23,"Fifth year","Informatics","",5,2,3,"Yes","Yes","On Campus","No","No","",2,1,"Unsure","","No","",1
+"75","5/14/2018 11:00:53","busyness","Male","Asian",21,"Third Year","Informatics","",5,1,4,"No","Yes","On Campus","No","No","",1,1,"No","","No","",1
+"76","5/14/2018 11:00:59","sad","Male","South Asian Indian",NA,"First Year","CSE/Math","",3,1,2,"No","Yes","On Campus","No","No","",2,3,"No","","Yes","It was in a joking/ironic manner",1
+"77","5/14/2018 11:01:56","Boring","Male","Asian",20,"Second Year","biochem/bioe","info",3,3,3,"Yes","No","","","","",NA,NA,"","","","",NA
+"78","5/14/2018 11:02:35","busy","Female","Caucasian",22,"Fourth Year","Informatics","",3,1,3,"No","No","","","","",NA,NA,"","","","",NA
+"79","5/14/2018 11:02:53","Spelling","Male","Asian",19,"Second Year","Speech and hearing sciences","",5,1,5,"Yes","Yes","Facebook Meme Page","No","No","",3,3,"Unsure","","No","",2
+"80","5/14/2018 11:03:33","Business","Male","Asian",21,"Third Year","Mechanical Engineering","",4,2,2,"Yes","Yes","On Campus","No","No","",1,1,"No","","No","",1
+"81","5/14/2018 11:03:50","wholesome?","Female","Asian",19,"Second Year","Biochemistry/Neurobio","Global health",3,2,4,"Yes","Yes","Facebook Meme Page","No","No","",2,3,"No","","No","",3
+"82","5/14/2018 11:05:16","busyness","Male","Asian",19,"Third Year","Marketing","",4,4,4,"Yes","Yes","On Campus","No","No","",3,1,"Yes","","Yes","Wow that's pretty straight-forward. ",4
+"83","5/14/2018 11:05:38","Boundless","Female","Asian",20,"Second Year","Biochem intended french","",3,4,4,"Yes","Yes","On Campus","No","Yes","Positive",4,1,"No","No","Yes","Funny",4
+"84","5/14/2018 11:07:40","busy","Female","Asian",20,"Second Year","Education, Communities, and Organizations","Nutritional Science",3,3,2,"Yes","Yes","On Campus","No","No","",3,2,"Unsure","","No","",2
+"85","5/14/2018 11:07:52","busyness","Female","Asian, Pacific Islander",20,"Third Year","Linguistics and medics anthropology","",4,3,4,"Yes","Yes","Facebook Meme Page","No","No","",4,1,"No","","No","",4
+"86","5/14/2018 11:08:40","huh?","Female","Asian",20,"Second Year","Marketing","",4,2,3,"Yes","Yes","On Campus","No","No","",3,3,"No","","Yes","They're interesting",3
+"87","5/14/2018 11:10:24","cool","Male","Asian",20,"Third Year","Business","Diversity",4,3,4,"Yes","Yes","On Campus","No","No","",3,1,"No","","No","",3
+"88","5/14/2018 11:10:27","FALSE","Male","Caucasian",19,"First Year","Mathematics","",2,2,3,"Yes","Yes","On Campus","No","No","",1,1,"No","","No","",1
+"89","5/14/2018 11:10:29","Time","Female","Asian",16,"First Year","CSE","",3,3,2,"Yes","Yes","On Campus","No","No","",3,2,"No","","No","",2
+"90","5/14/2018 11:10:29","Support","Male","Asian",21,"Third Year","Business","",4,4,4,"Yes","Yes","On Campus","No","No","",3,3,"Unsure","","No","",3
+"91","5/14/2018 11:10:38","Busyness","Male","Caucasian",21,"Fourth Year","Philosophy and Entrepreneurship","",4,3,3,"Yes","Yes","On Campus","No","No","",3,2,"No","","No","",3
+"92","5/14/2018 11:10:43","busy","Male","Caucasian",26,"Fourth Year","psychology","",5,4,2,"Yes","Yes","On Campus","No","No","",1,1,"No","","No","",1
+"93","5/14/2018 11:11:17","Worth","Male","Asian",21,"Third Year","Business Administration","",4,1,3,"Yes","Yes","On Campus","No","No","",3,1,"Unsure","","No","",3
+"94","5/14/2018 11:13:53","competition","Male","Asian, Black/African",18,"First Year","bio","",3,1,4,"Yes","Yes","On Campus","No","No","",1,1,"No","","No","",2
+"95","5/14/2018 11:14:24","Life","Female","Asian",20,"Third Year","General Biology","",5,4,3,"No","Yes","On Campus","No","No","",4,1,"Unsure","","No","",3
+"96","5/14/2018 11:14:54","Good ","Male","Pacific Islander",21,"Third Year","Bioengineering ","",4,3,3,"No","Yes","On Campus","No","No","",2,2,"Unsure","","No","",3
+"97","5/14/2018 11:17:30","Busy","Male","Asian",19,"Second Year","International Studies","",4,2,3,"Yes","Yes","On Campus","No","No","",3,1,"No","","No","",1
+"98","5/14/2018 11:17:59","haha","Male","Asian",18,"First Year","Computer Science + Math","",4,1,2,"Yes","Yes","On Campus","No","No","",2,1,"No","","Yes","That they were funny. I thought it was a prank at first, to be honest.",1
+"99","5/14/2018 11:18:19","Busyness","Female","Asian",23,"Second Year","Communication, Dance","",3,3,5,"No","Yes","On Campus","No","Yes","In a positive way! It’s that needed extra boost that will help me throughout the day. ",4,1,"Unsure","I was happy","No","",4
+"100","5/14/2018 11:18:26","Schedule","Female","Asian",21,"Third Year","Communication","Diversity ",4,3,4,"Yes","Yes","On Campus","No","No","",3,1,"No","","No","",5
+"101","5/14/2018 11:38:11","Lame","Female","Prefer not to answer",20,"Third Year","Informatics","",2,2,3,"Yes","Yes","Facebook Meme Page","No","No","",3,3,"No","","No","",3
+"102","5/14/2018 11:49:21","pointless","Male","Asian",20,"Second Year","hcde","",3,2,2,"No","Yes","On Campus","No","No","",1,4,"Unsure","i feel either roll eyes or feel bad","No","",1
+"103","5/14/2018 12:03:21","pressure ","Female","Black/African",22,"Third Year","LSJ","",2,3,3,"Yes","Yes","On Campus","No","No","",3,3,"No","No ","No","",3
+"104","5/14/2018 12:33:07","Mispelled","Female","Caucasian",20,"Third Year","Informatics","",5,3,3,"Yes","Yes","Facebook Meme Page","No","No","",2,1,"No","","No","",2
+"105","5/14/2018 12:58:58","Reassurance ","Male","Caucasian",18,"First Year","EE","",4,1,4,"Yes","Yes","On Campus","No","No","",4,1,"Unsure","","No","",3
+"106","5/14/2018 13:07:45","TRUE","Female","Asian",19,"Second Year","Psychology","",5,1,4,"Yes","Yes","On Campus","No","No","",3,3,"No","","No","",3
+"107","5/14/2018 13:28:26","reflection","Male","Caucasian",19,"First Year","Informatics","Environmental Studies",3,1,4,"Yes","Yes","On Campus","Yes","Yes","Made me feel happier, judging myself less",4,2,"Yes","More positive attitudes","Yes","Told my parents about them and how cool they are",4
+"108","5/14/2018 14:00:01","unncessary ","Female","Asian",20,"Third Year","Informatics","",4,4,3,"Yes","Yes","On Campus","No","No","",1,1,"No","","No","",1
+"109","5/14/2018 14:58:07","Confusion","Female","Caucasian",21,"Fourth Year","Neurobiology","Anthropology",2,1,3,"No","Yes","On Campus","No","No","",4,1,"No","","No","",1
+"110","5/14/2018 15:43:37","Value","Female","Pacific Islander",20,"Second Year","Medical Anthropology & Global Health","",4,2,4,"Yes","Yes","On Campus","No","Yes","They assure me that I'm not the only one struggling and that there are resources that are available to me if I need them",4,2,"Yes","I had a more positive outlook throughout my day ","Yes","I discussed how most of the signs were encouraging, but some trigger negative parts of my experience at UW",3
+"111","5/14/2018 17:11:08","UW_Bullshit","Male","South Asian",20,"Fourth Year","Informatics","",2,3,2,"Yes","Yes","On Campus","No","No","",1,4,"Unsure","","Yes","That UW, should instead start talking to more people and making mental health resources more readily available rather than this stuff. They have ruined what the meaning of learning is. If they focussed on making better classes and removed the GPA, I can promise you that students would perform much better in each class. ",2
+"112","5/14/2018 17:45:09","BOUNDLESS","Male","Asian",20,"Third Year","INFORMATICS","ENTREPRENUERSHIP",5,3,3,"Yes","Yes","Facebook Meme Page","No","No","",1,1,"No","","No","",3
+"113","5/14/2018 19:30:08","Really","Female","Asian",20,"Third Year","Informatics","",4,3,4,"Yes","Yes","On Campus","No","No","",3,1,"Unsure","","No","",3
+"114","5/14/2018 19:52:14","twosided","Male","Asian",19,"First Year","Aeronautics and Astronautics","",4,1,3,"Yes","No","","","","",NA,NA,"","","","",NA
+"115","5/14/2018 21:24:53","love","Male","Asian",20,"Third Year","Aquatic and Fishery Science","Oceanography, Marine Biology",4,3,4,"Yes","Yes","On Campus","No","Yes","It made me feel better about my situation and remind me of my worth beyond school. It also made me think a little more about my worries and how I'm going to tackle them, in a constructive, introspective way. I love them!!",4,1,"Unsure","I kept at the school grind, so my behavior didn't change, but my mindset did. It was like a little boost to my day!","Yes","I said that I really appreciated the folks who put them up! They're often very timely",4
+"116","5/14/2018 22:16:06","Better","Male","Asian",21,"Third Year","Statistics","Informatics",4,2,4,"Yes","Yes","On Campus","No","Yes","Someone cares",3,1,"Unsure","","No","",3
+"117","5/14/2018 22:27:13","Wow","Female","Asian",20,"Third Year","Informatics ","",4,4,3,"Yes","Yes","On Campus","No","No","",3,3,"No","","No","",3
+"118","5/14/2018 22:37:12","boundless","Male","Caucasian",21,"Third Year","Informatics","",5,1,3,"Yes","Yes","On Campus","No","No","",3,1,"No","","No","",2
+"119","5/14/2018 23:14:42","bee","Male","Asian",21,"Third Year","Informatics, Statistics","",4,4,4,"No","Yes","On Campus","No","No","",4,2,"No","","No","",3
+"120","5/14/2018 23:29:50","Cheesy","Male","Asian",19,"Second Year","Informatics","",4,2,2,"Yes","Yes","On Campus","No","No","",1,1,"No","","No","",2
+"121","5/14/2018 23:35:11","Relief ","Female","Asian",21,"Third Year","Neurobiology ","",2,2,5,"Yes","Yes","On Campus","Yes","Yes","",3,2,"Unsure","","No","",4
+"122","5/14/2018 23:53:46","assertive","Female","Caucasian",21,"Third Year","Informatics","",2,2,3,"Yes","Yes","On Campus","No","No","",3,2,"No","","Yes","Talked about how they can make you reassess how well you are doing, but sometimes in a way that makes you want to think about all of the issues you're facing and not bringin' in the positivity",2
+"123","5/14/2018 23:57:40","cringe","Female","Asian",19,"First Year","INFO","",4,2,4,"Yes","Yes","On Campus","No","No","",1,3,"No","","No","",1
+"124","5/15/2018 9:07:24","Hypocrisy","Male","Caucasian",20,"Second Year","Informatics","",4,1,2,"Yes","Yes","On Campus","No","No","",1,3,"No","","Yes","How hypocritical they seem, because UW just wants our sweet sweet money and doesn't actually give a hoot about the individual",1
+"125","5/15/2018 9:22:34","Sweet","Female","Asian",19,"Second Year","Physics","Japanese",2,3,4,"Yes","Yes","On Campus","No","No","",3,3,"Unsure","","No","",4
+"126","5/15/2018 10:03:03","Busy","Female","Caucasian",22,"Fourth Year","Info","",4,2,3,"Yes","Yes","On Campus","No","Yes","Made me feel loved and happy, like people care ",4,1,"Unsure","","No","",3
+"127","5/15/2018 12:12:20","mmkay","Male","Caucasian",21,"Third Year","Informatics","",2,1,1,"Yes","Yes","On Campus","No","Yes","They looked dumb and made me laugh because I thought they were dumb. ",1,4,"No","","Yes","Hey you see those dumb signs? Man I hope no one reading the results of this survey came up with those phrases... Side note because I didn't have anywhere else to write this, the hell are microcompassions? Isn't that just called being nice? Why do we need so many syllables?",1
+"128","5/15/2018 13:27:21","Imbusy","Male","Caucasian",22,"Fourth Year","Informatics","",4,3,3,"Yes","Yes","On Campus","No","No","",2,1,"No","","No","",1
+"129","5/15/2018 14:28:23","Why","Male","Asian",21,"Second Year","Business","",4,4,3,"Yes","Yes","On Campus","No","Yes","In a partially negative way",2,3,"No","","No","",3
+"130","5/15/2018 14:30:43","Idk","Male","Asian",19,"Second Year","Poli Sci","Sales Cert",4,1,4,"Yes","No","","","","",NA,NA,"","","","",NA
+"131","5/15/2018 14:45:35","Busy","Male","Caucasian",22,"Fourth Year","Geography ","",3,3,4,"No","No","","","","",NA,NA,"","","","",NA
+"132","5/15/2018 14:46:20","Corny ","Male","Caucasian",20,"First Year","Statistics ","",5,1,2,"Yes","Yes","Facebook Meme Page","No","No","",2,2,"No","","No","",2
+"133","5/15/2018 15:11:41","Happy","Female","Asian",19,"First Year","Informatics","",3,2,3,"No","Yes","On Campus","No","Yes","Made be feel better about myself when I was thinking negatively on some days",4,1,"Unsure","","No","",3
+"134","5/15/2018 15:19:41","Stress","Male","Caucasian",19,"Third Year","Business","",2,3,1,"Yes","Yes","On Campus","No","No","",3,3,"No","","No","",3
+"135","5/15/2018 15:32:33","life","Male","Caucasian",18,"First Year","Computer Science","Entrepreneurship",3,1,3,"Yes","No","","","","",NA,NA,"","","","",NA
+"136","5/15/2018 17:47:12","confusing","Male","Black/African, Chamorro or Guamanian ",22,"Third Year","Public Health","",4,5,2,"No","Yes","On Campus","No","Yes","They show that UW is inclusive ",5,1,"Unsure","","No","",3
+"137","5/15/2018 17:51:09","Busy","Male","Asian",21,"Third Year","Electrical Engineering","",5,1,4,"Yes","Yes","On Campus","No","Yes","Better way",4,1,"Yes","","No","",5
+"138","5/15/2018 18:23:07","Stress","Female","Asian",19,"First Year","Business","",4,2,4,"Yes","Yes","On Campus","No","No","",3,3,"No","","No","",4
+"139","5/15/2018 18:51:46","pointless","Female","Asian, Caucasian, Native American",20,"Second Year","Accounting","",3,2,3,"Yes","Yes","On Campus","No","No","",1,3,"No","","No","",1
+"140","5/15/2018 19:07:11","stress","Female","Caucasian",20,"Third Year","business","",3,4,3,"Yes","Yes","On Campus","Yes","Yes","Some of the signs about worthiness and gratitude really made me feel better. Please keep them up. Theyre a breath of fresh air when my mental health goes south",5,1,"Yes","i remember to think of something im grateful for. it helps me think in a bigger picture instead of stressing the small stuff","Yes","i liked them ",5
+"141","5/15/2018 20:23:39","Meme","Male","Asian",20,"Second Year","Intended Informatics","planned math minor",4,4,2,"Yes","Yes","Facebook Meme Page","No","No","",2,1,"No","","Yes","""Did you see the memes about the signs?""",1
