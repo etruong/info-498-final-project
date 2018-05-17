@@ -8,7 +8,12 @@ let frequencies = require("./frequencies.json");
 // Instantiates a client
 let client = new language.LanguageServiceClient();
 
-let sentiments = {};
+let sentiments = {
+    first_word: [],
+    freq: [],
+    sentiment: [],
+    magnitude: [],
+};
 
 // Gets sentiment analysis of all words
 for (let wordObj of frequencies) {
@@ -26,13 +31,12 @@ for (let wordObj of frequencies) {
       console.log(`Sentiment score: ${sentiment.score}`);
       console.log(`Sentiment magnitude: ${sentiment.magnitude}`);
 
-      sentiments[wordObj.first_word] = {
-        frequency: wordObj.freq,
-        sentiment: sentiment.score,
-        magnitude: sentiment.magnitude
-      };
+      sentiments.first_word.push(wordObj.first_word);
+      sentiments.freq.push(wordObj.freq);
+      sentiments.sentiment.push(sentiment.score);
+      sentiments.magnitude.push(sentiment.magnitude);
 
-      // Writes to a new JSON file every time because I'm bad at async
+      // Writes to a new JSON file every time because I'm bad at async lol
       fs.writeFileSync(
         "data/frequencies_with_sentiment.json",
         JSON.stringify(sentiments),
