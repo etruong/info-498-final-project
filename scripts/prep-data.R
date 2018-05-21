@@ -1,6 +1,7 @@
+# renames column of survey
 library (dplyr)
 
-data <- read.csv ("data/survey-response.csv")
+data <- read.csv ("../data/survey-response.csv")
 col.name <- c ("timestamp", "first_word", "gender", "ethnicity", "age", "school", "major", "minor", 
                "mental_health", "microaggression", "microcompassion", "memes", "first_see", "location_see",
                "link", "feel_change", "feel_change_explain", "uplift", "discourage", 
@@ -8,4 +9,4 @@ col.name <- c ("timestamp", "first_word", "gender", "ethnicity", "age", "school"
                "effective")
 colnames (data) <- col.name
 
-write.csv(data,"./data/prep-survey-response.csv")
+write.csv(data,"../data/prep-survey-response.csv")

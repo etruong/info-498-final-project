@@ -1,5 +1,5 @@
 library(dplyr)
-data <- read.csv('./data/prep-survey-response.csv')
+data <- read.csv('../data/prep-survey-response.csv', stringsAsFactors = FALSE)
 
 # CLEAN FIRST WORD COLUMN
 data$first_word <- tolower(data$first_word)
@@ -155,4 +155,19 @@ unique(data$major)
 unique(data$minor)
 
 data$location_see[data$location_see=='First saw it on the meme page, then started noticing it on campus'] <- 'Facebook Meme Page'
-write.csv(data,"./data/prep-survey-response.csv")
+
+# CLEAN ETHNICITY COLUMN
+data$ethnicity[data$ethnicity == 'Filipino'] <- 'Asian'
+data$ethnicity[data$ethnicity == 'South Asian Indian'] <- 'Asian'
+data$ethnicity[data$ethnicity == 'South Asian'] <- 'Asian'
+data$ethnicity[data$ethnicity == 'Black/African, Chamorro or Guamanian '] <- 'Black/African'
+data$ethnicity[data$ethnicity == ''] <- 'Prefer not to answer'
+two.more <- grep (",", data$ethnicity, value = TRUE)
+data$ethnicity[data$ethnicity == "Asian, Caucasian"] <- 'Two or more races'
+data$ethnicity[data$ethnicity == 'Asian, Pacific Islander'] <- 'Two or more races'
+data$ethnicity[data$ethnicity == 'Asian, Black/African'] <- 'Two or more races'
+data$ethnicity[data$ethnicity == 'Asian, Caucasian, Native American'] <- 'Two or more races'
+data$ethnicity[data$ethnicity == 'Pacific Islander, Filipino'] <- 'Two or more races'
+data$ethnicity[data$ethnicity == 'Pacific Islander, Filipino '] <- 'Two or more races'
+
+write.csv(data,"../data/prep-survey-response.csv")
