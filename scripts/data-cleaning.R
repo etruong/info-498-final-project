@@ -170,4 +170,7 @@ data$ethnicity[data$ethnicity == 'Asian, Caucasian, Native American'] <- 'Two or
 data$ethnicity[data$ethnicity == 'Pacific Islander, Filipino'] <- 'Two or more races'
 data$ethnicity[data$ethnicity == 'Pacific Islander, Filipino '] <- 'Two or more races'
 
+# CLEAN SCHOOL LEVEL
+data$school[data$school == ''] <- NA
+
 write.csv(data,"../data/prep-survey-response.csv")
