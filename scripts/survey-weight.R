@@ -1,9 +1,9 @@
 # includes survey weights to data frame
 
 library (dplyr)
-data <- read.csv ("../data/prep-survey-response.csv", stringsAsFactors = FALSE)
+data <- read.csv ("../../data/prep-survey-response.csv", stringsAsFactors = FALSE)
 
-demographic <- read.csv ("../data/uw-population-race-data.csv", stringsAsFactors = FALSE)
+demographic <- read.csv ("../../data/uw-population-race-data.csv", stringsAsFactors = FALSE)
 demographic <- select (demographic, Population_Ethnicity, Population_Percentage)
 
 sample.race <- unique (data$ethnicity)
@@ -29,4 +29,4 @@ sample.race <- mutate (sample.race, svy_weight = Population_Percentage / percent
 sample.race <- select (sample.race, ethnicity, svy_weight)
 
 data <- left_join (data, sample.race)
-write.csv (data, "../data/prep-survey-response.csv")
+write.csv (data, "../../data/prep-survey-response.csv")
