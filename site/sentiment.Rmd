@@ -1,0 +1,16 @@
+---
+title: "Asdfasdf2"
+author: "Hayden Hong"
+date: "5/23/2018"
+output: html_document
+runtime: shiny
+---
+
+```{r tabsets, echo=FALSE}
+shinyAppDir(
+  system.file("../scripts/sentiment-analysis", package = "shiny"),
+  options = list(
+    width = "100%", height = 550
+  )
+)
+```
