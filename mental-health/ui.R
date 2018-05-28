@@ -45,7 +45,7 @@ shinyUI(fluidPage(
     
     # Show a plot of the generated .. thing
     mainPanel(
-       plotOutput("plotly")
+       plotOutput("plot")
     )
   )
 ))

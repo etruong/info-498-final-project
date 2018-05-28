@@ -8,6 +8,7 @@ output: html_document
 #Survey Development and Design
 
 ```{r, message = FALSE, warning = FALSE, echo = FALSE}
+
 tags$img (class = "sign", src = "survey-sign-1.jpg", width = 300)
 
 ```
@@ -39,17 +40,26 @@ uplifted).
 
 # Population and Sample Demographics
 
-```{r, message = FALSE, warning = FALSE, echo = FALSE}
-
-source("../prep-data.R")
-ethnicities <- c("Caucasian", "Asian", "International", "Latino", "Two or more races", "Black/African", "")
-
-```
-
 The population of interest is the UW student community, as they are the main target of the 
 Resilience Lab signs. In terms of keeping our sample representative of the UW student population,
 we care most about two main demographical dimensions: ethnicity and major. The following tables show 
 UW's makeup and theblah  #add
+
+```{r, message = FALSE, warning = FALSE, echo = FALSE}
+
+library(ggplot2)
+
+source ("../prep-data.R")
+ethnicities <- c("Caucasian", "Asian", "International", "Latino", "Two or more races", "Black/African", "Prefer not to answer", "Hawaiian/Pacific Islander", "American Indian/Alaska Native")
+uw.percentage <- c(40.3, 24.6, 14.6, 8.1, 7.4, 3.0, 1.1, 0.5, 0.4)
+uw_ethnic_makeup <- data.frame(ethnicities, uw.percentage, stringsAsFactors = FALSE)
+
+ethnicity_plot <- ggplot(uw_ethnic_makeup, aes(x = ethnicities, y = percentage)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Ethnicity Breakdown UW Student Population vs. Survey Sample",
+       x = "Ethnicity", y = "Percentage") 
+
+```
 
 # Limitations
 
