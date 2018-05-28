@@ -60,7 +60,7 @@ num_survey_takers <- nrow(survey_ethnic_makeup)
 grouped_survey_ethnic_makeup <- 
   group_by(survey_ethnic_makeup, ethnicity) %>% 
   summarize(n = n()) %>% 
-  mutate(survey.percentage = round(n*100/num_survey_takers), digits = 2) %>% 
+  mutate(survey.percentage = round((n*100/num_survey_takers), digits = 1)) %>% 
   select(ethnicity, survey.percentage)
 
 ethnicity_plot <- ggplot(uw_ethnic_makeup, aes(x = ethnicities, y = percentage)) +
