@@ -9,10 +9,6 @@ grade.option <- c ("All", "First Year", "Second Year", "Third Year", "Fourth Yea
                    "Fifth year", "Graduate")
 major.option <- sort (unique (data$major))
 ethnicity.option <- sort (as.vector (unique (data$ethnicity)))
-major.selection <- c ("Custom", "Competitive", "Open", "Minimum")
-competitive.major <- c ("")
-noncompetitive.major <- c ("")
-minimum.major <- c ("")
 
 my.ui <- fluidPage (theme = shinytheme ("sandstone"),
                     tags$head(
@@ -63,6 +59,7 @@ my.ui <- fluidPage (theme = shinytheme ("sandstone"),
                                      purpose. We want to be able to draw relationships between student demographics/profiles and perception of the signs. 
                                      We also want to provide a resource for the Resilience Lab to use as a way to gain insight regarding their intervention, 
                                      and ultimately to help them in their decision of continuing this intervention in the future."),
+<<<<<<< HEAD
                                                     h1 ("Related Works"),
                                                     p (""))
                                 ),
@@ -183,6 +180,47 @@ my.ui <- fluidPage (theme = shinytheme ("sandstone"),
                                                           h3 ("Response Frequency"),
                                                           p ("The bar graph above visualizes student's response to the question:"),
                                                           tags$ul (tags$li ("How effective do you believe the signs are at introducing 
+=======
+                                  h1 ("Related Works"),
+                                  p (""))
+              ),
+              tabPanel ("Methods"
+                # Kassy kat
+                # scripts/methods.R
+              ),
+              
+              tabPanel ("Experience Microaggressions and Microcompassions"
+                # Kassy is doing this
+                # mental-health folder
+              ),
+              
+              tabPanel ("First Response"
+                # Hayden WordCloud
+              ),
+
+              tabPanel ("Perceived Effectiveness", 
+                        sidebarLayout (
+                          sidebarPanel (
+                            p ("Manipulate the data visualization by using the widgets below."),
+                            selectInput("grade", label = "Select a Grade Level", 
+                                        grade.option, selected = "All"),
+                            tags$strong ("Filter by Student's Ethnicity"), tags$br (),
+                            actionButton ("all.ethnicity", "Select/Deselect All"),
+                            checkboxGroupInput("ethnicity", label = "", 
+                                               choices = ethnicity.option, selected = ethnicity.option),
+                            tags$strong ("Select a Major"), tags$br (),
+                            actionButton ("all.major", "Select/Deselect All"),
+                            checkboxGroupInput("major", label = "", 
+                                               major.option, selected = major.option)
+                          ),
+                          mainPanel (
+                            h1 ("Percieved Effectiveness of Resilience Lab Signs"),
+                            tabsetPanel (
+                              tabPanel ("Frequency Count", 
+                                        h3 ("Response Frequency"),
+                                        p ("The bar graph above visualizes student's response to the question:"),
+                                        tags$ul (tags$li ("How effective do you believe the signs are at introducing 
+>>>>>>> master
                                                  and promoting microcompassion on campus?")),
                                                           p ("This question evaluates the students perception of the effectiveness to
                                            introduce or promote microcompassion on campus. Students answered on a 1 to 5

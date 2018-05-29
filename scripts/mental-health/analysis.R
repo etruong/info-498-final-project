@@ -30,6 +30,9 @@ gathered_data <- gather(prepped_data, "microexperience", "rating", 2:3)
 
 plot <- 
   ggplot(gathered_data, aes(x = ment.health, y = rating, col = microexperience)) +
-  geom_jitter()
+  geom_jitter() +
+  labs(x = "Rating of Own Mental Health (Poor: 1, Excellent: 5)",
+       y = "Perception of Microexperience (Less: 1, More: 5)",
+       col = "Microexperience, Relative to Peers")
 
 plotly <- ggplotly(plot)

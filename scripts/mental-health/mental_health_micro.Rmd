@@ -1,0 +1,23 @@
+---
+title: "Rating of Mental Health and Microexperiences"
+#author: "Kassandra Franco"
+#date: "5/29/2018"
+output: html_document
+---
+
+```{r, message = FALSE, warning = FALSE, echo = FALSE}
+
+source("analysis.R")
+
+plotly
+
+```
+
+This visualization shows our survey takers' rating of own their own mental health (1 being poor and 5 being excellent) versus their perception of how much microaggression and microcompassion they believe they experience relative to their peers (hjhjh.
+
+Regarding experience with microaggressions, responses seem very spread out and does not seem to have a discernable trend.
+
+Regarding experience with microcompassions, responses are clustered towards higher perceptions of microexperiences/experiencing relatively more microcompassions than their peers. This could mean that our survey takers are more optimistic in terms of how much kindness they receive relative to their peers (our microcompassions question is framed in terms of how much relative kindness they receive). Further, none of the students who answered 1 or 2 for the microcompassion question/believe they experience less kindness than their peers rate their mental health as excellent. 
+
+
+
