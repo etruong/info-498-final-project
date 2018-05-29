@@ -7,12 +7,13 @@ library(tidyr)
 library(reshape2)
 library(plotly)
 
-data <- read.csv("./ResilienceLabSignSurvey.csv")
+source("data/prep-data.R")
+# data <- read.csv("./ResilienceLabSignSurvey.csv")
 prepped_data <- 
   select(data, 
-         How.would.you.rate.your.mental.health.., 
-         In.relation.to.your.peers..to.what.degree.do.you.experience.microaggressions., 
-         In.relation.to.your.peers..to.what.degree.do.you.experience.microcompassions.) #,
+         mental_health, 
+         microaggression, 
+         microcompassion) #,
 
 colnames(prepped_data) <- 
   c("ment.health", "microaggression", "microcompassion") #, "effective") 

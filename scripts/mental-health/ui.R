@@ -9,7 +9,7 @@
 
 #setwd("~/Desktop/Classes/INFO_498/wb-8-kasfranco/MentalHealthAndMicroExperiences")
 library(shiny)
-source("analysis.R")
+source("data/mental-health/analysis.R")
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(

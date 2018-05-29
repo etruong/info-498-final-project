@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2262c9-111c-4dd0-a999-d858d406cfe9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/scripts/first_word.R" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/first_word.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/afruitpie.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/info-498-final-project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/mental-health/ResilienceLabSignSurvey.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/mental-health/analysis.R" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mental-health/analysis.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/sentiment-analysis/first_word.R" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/sentiment-analysis/first_word.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/sentiment-analysis/server.R" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/sentiment-analysis/server.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/sentiment-analysis/ui.R" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/sentiment-analysis/ui.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/_site.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/asdf.Rmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/sentiment.Rmd" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,52 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.R" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.R" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.R">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data-cleaning.R" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/data-cleaning.R">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="first_word.R" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/first_word.R">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/sentiment-analysis/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frequencies.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/sentiment-analysis/frequencies.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6279">
-              <caret line="273" column="1" selection-start-line="273" selection-start-column="1" selection-end-line="273" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frequencies_with_sentiment.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/frequencies_with_sentiment.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="15" selection-start-column="15" selection-end-column="20" />
+            <state relative-caret-position="926">
+              <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -92,11 +65,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/scripts/sentiment-analysis/node_modules" />
+    <handled-path value="$PROJECT_DIR$/scripts/sentiment-analysis/sentiment-analysis/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/scripts/sentiment-analysis/package.json" />
+      <path value="$PROJECT_DIR$/scripts/sentiment-analysis/sentiment-analysis/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
@@ -108,9 +81,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,6 +108,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,11 +191,12 @@
       <workItem from="1526582376116" duration="684000" />
       <workItem from="1526584971614" duration="870000" />
       <workItem from="1526920445872" duration="193000" />
+      <workItem from="1527530121026" duration="604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2385000" />
+    <option name="totallyTimeSpent" value="2989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -299,6 +273,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/first_word.R">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.R">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/data-cleaning.R">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/sentiment-analysis/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/sentiment-analysis/frequencies.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6279">
+          <caret line="273" column="1" selection-start-line="273" selection-start-column="1" selection-end-line="273" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/frequencies_with_sentiment.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/first_word.R">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
@@ -338,13 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.R">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/sentiment-analysis/frequencies.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6279">
@@ -359,9 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/data-cleaning.R">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/sentiment-analysis/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
@@ -372,7 +374,21 @@
     <entry file="file://$PROJECT_DIR$/scripts/first_word.R">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/data-cleaning.R">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.R">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="926">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
         </state>
       </provider>
     </entry>

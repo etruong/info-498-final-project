@@ -1,0 +1,13 @@
+name: resilience
+title: resilience
+username:
+account: afruitpie
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 350195
+bundleId: 1397309
+url: https://afruitpie.shinyapps.io/resilience/
+when: 1527550727.25563
+asMultiple: TRUE
+asStatic: FALSE
+additionalFiles: _site.yml

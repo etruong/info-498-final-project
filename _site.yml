@@ -1,0 +1,23 @@
+navbar:
+  title: "UW Resilience Lab Signs"
+  right:
+    - text: "Home"
+      href: home.Rmd
+    - text: "Methods"
+      href: methods.Rmd
+    - text: "Microaggressions & Microcompassions"
+      href: mental-health.Rmd
+    - text: "Perceived Effectiveness"
+      href: sentiment.Rmd
+    - text: "Behavior"
+      href: behavior.Rmd
+    - text: "Conclusions"
+      href: conclusion.Rmd
+
+      
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+    css: styles.css

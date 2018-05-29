@@ -1,0 +1,12 @@
+name: home
+title: home
+username:
+account: afruitpie
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 350193
+bundleId: 1397306
+url: https://afruitpie.shinyapps.io/home/
+when: 1527550506.10814
+asMultiple: TRUE
+asStatic: FALSE

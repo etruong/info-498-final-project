@@ -1,12 +1,3 @@
-#
-# This is the user-interface definition of a Shiny web application. You can
-# run the application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
 library(plotly)
 library(wordcloud2)
@@ -26,12 +17,12 @@ shinyUI(fluidPage(
                    selected = TRUE),
       h3(textOutput("sentimentDescription"))
     ),
-
+    
     
     # Show a plot of the generated distribution
     mainPanel(
-       plotlyOutput("sentimentPlot"),
-       wordcloud2Output("wordCloud")
+      plotlyOutput("sentimentPlot"),
+      wordcloud2Output("wordCloud")
     )
   )
 ))

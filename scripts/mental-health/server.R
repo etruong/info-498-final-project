@@ -10,7 +10,7 @@
 # setwd("~/Desktop/Classes/INFO_498/wb-8-kasfranco/MentalHealthAndMicroExperiences")
 library(shiny)
 library (plotly)
-source("analysis.R")
+source("data/mental-health/analysis.R")
 
 shinyServer(function(input, output) {
   
@@ -23,8 +23,8 @@ shinyServer(function(input, output) {
   # })
   
   filtered_data <- reactive ({
-    validate (
-      need (input$rating.health != "", "Please select data")
+    shiny::validate (
+      need (!is.null(input$rating.health), "Please select data")
     )
     if(input$experience != "both" & 
        (input$rating.health == 1 | input$rating.health == 2 |

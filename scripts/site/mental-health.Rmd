@@ -1,0 +1,11 @@
+---
+runtime: shiny
+output: html_document
+---
+```{r tabsets, echo=FALSE}
+shinyAppDir(
+  "../mental-health",
+  options=list(
+    width="100%", height=1000
+  ))
+```
