@@ -46,6 +46,7 @@ UW's ethnicity makeup and our survey takers' ethnicity makeup.
 library(ggplot2)
 library(tidyr)
 library(dplyr)
+library(knitr)
 
 ethnicity <- c("Caucasian", "Asian", "International", "Latino", "Two or more races", "Black/African", "Prefer not to answer", "Pacific Islander", "American Indian/Alaska Native")
 uw.percentage <- c(40.3, 24.6, 14.6, 8.1, 7.4, 3.0, 1.1, 0.5, 0.4)
@@ -80,9 +81,29 @@ ethnicity_plot
 
 ```
 
-Ethnicity-wise, our survey takers do not 
+Ethnicity-wise, our survey takers are not very representative of the UW population. For one, our sample consists of ~60% Asians, when the UW population is only ~25% Asian. Caucasians also only make up ~25% of our sample, when they make up ~40% OF THE UW population. Another discrepancy is that Native Americans and Latinos are not represented in our sample. We also have no students in the International category, however that is because we did not include an International option in our survey. Source: [OMAD 2017-2018 Fact Sheet](https://www.washington.edu/omad/files/2017/10/2017-18_OMAD_FACTSHEET_final_10-17-17.pdf)
+
+```{r, message = FALSE, warning = FALSE, echo = FALSE}
+
+major <- c("Psychology", "Computer Science and Engineering", "Communication", "Biochemistry", "Economics")
+count <- c("944", "814", "760", "661", "646")
+uw_top_majors <- data.frame(major, count, stringsAsFactors = FALSE)
+
+survey_top_majors <- 
+  select(data, timestamp, major) %>% 
+  group_by(major) %>% 
+  summarize(count = n()) %>% 
+  arrange(-count) %>% 
+  top_n(5)
+
+knitr::kable(uw_top_majors, caption = "Top 5 UW Undergrad Majors")
+knitr::kable(survey_top_majors, caption = "Top 5 Survey Sample Majors")
+
+```
+
+Major-wise, we have a disproportionate amount of Informatics students and Electrical Engineering students, which makes a lot of sense because we advertised our survey a lot in our INFO 498 class, and also because one of our project members, Elisa, has a lot of Electrical Enginnering friends. Source: [UW Office of the Registrar: Quick Stats](https://studentdata.washington.edu/wp-content/uploads/sites/3/2018/04/Quick_Stats_Seattle_Spr2018.pdf)
 
 # Limitations
 
-The somethign something blah") #add
+Discrepancies and inaccuracy can arise from the misrepresentation of certain demographic groups in our survey. We had considered using survey weights for either ethnicity or major, however decided against it because of the fact that we did not initially stratify our survey. That being said, we are keeping aware of these discrepancies. 
 
