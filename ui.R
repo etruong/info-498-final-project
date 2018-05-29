@@ -8,10 +8,6 @@ grade.option <- c ("All", "First Year", "Second Year", "Third Year", "Fourth Yea
                    "Fifth year", "Graduate")
 major.option <- sort (unique (data$major))
 ethnicity.option <- sort (as.vector (unique (data$ethnicity)))
-major.selection <- c ("Custom", "Competitive", "Open", "Minimum")
-competitive.major <- c ("")
-noncompetitive.major <- c ("")
-minimum.major <- c ("")
 
 my.ui <- fluidPage (theme = shinytheme ("sandstone"),
                     tags$head(
