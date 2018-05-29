@@ -7,11 +7,7 @@ output: html_document
 
 #Survey Development and Design
 
-```{r, message = FALSE, warning = FALSE, echo = FALSE}
-
-tags$img (class = "sign", src = "survey-sign-1.jpg", width = 300)
-
-```
+![Sign on Rainier Vista](survey-sign-1.jpg)
 
 Our survey starts out with the picture above, and asks survey takers what the first word that
 comes to mind is upon seeing it. This is meant to gauge people's first reactions to the signs,
@@ -42,16 +38,18 @@ uplifted).
 
 The population of interest is the UW student community, as they are the main target of the 
 Resilience Lab signs. In terms of keeping our sample representative of the UW student population,
-we care most about two main demographical dimensions: ethnicity and major. The following tables show 
-UW's makeup and theblah  #add
+we care most about two main demographical dimensions: ethnicity and major. The following table show 
+UW's ethnicity makeup and our survey takers' ethnicity makeup.
 
 ```{r, message = FALSE, warning = FALSE, echo = FALSE}
 
 library(ggplot2)
+library(tidyr)
+library(dplyr)
 
-ethnicities <- c("Caucasian", "Asian", "International", "Latino", "Two or more races", "Black/African", "Prefer not to answer/NA", "Hawaiian/Pacific Islander", "American Indian/Alaska Native")
+ethnicity <- c("Caucasian", "Asian", "International", "Latino", "Two or more races", "Black/African", "Prefer not to answer", "Pacific Islander", "American Indian/Alaska Native")
 uw.percentage <- c(40.3, 24.6, 14.6, 8.1, 7.4, 3.0, 1.1, 0.5, 0.4)
-uw_ethnic_makeup <- data.frame(ethnicities, uw.percentage, stringsAsFactors = FALSE)
+uw_ethnic_makeup <- data.frame(ethnicity, uw.percentage, stringsAsFactors = FALSE)
 
 source("../prep-data.R")
 survey_ethnic_makeup <- select(data, timestamp, ethnicity)
@@ -63,12 +61,26 @@ grouped_survey_ethnic_makeup <-
   mutate(survey.percentage = round((n*100/num_survey_takers), digits = 1)) %>% 
   select(ethnicity, survey.percentage)
 
-ethnicity_plot <- ggplot(uw_ethnic_makeup, aes(x = ethnicities, y = percentage)) +
-  geom_bar(stat = "identity") +
+merged_ethnicities <- left_join(uw_ethnic_makeup, grouped_survey_ethnic_makeup)
+merged_ethnicities[is.na(merged_ethnicities)] <- 0
+colnames(merged_ethnicities) <- c("ethnicity", "UW", "Survey")
+merged_ethnicities <- gather(merged_ethnicities, "group", "percentage.makeup", 2:3)
+
+ethnicity_plot <- ggplot(merged_ethnicities, 
+                         aes(x = ethnicity, 
+                             y = percentage.makeup, 
+                             fill = group)) +
+  geom_bar(stat = "identity", position = "dodge") +
   labs(title = "Ethnicity Breakdown UW Student Population vs. Survey Sample",
-       x = "Ethnicity", y = "Percentage") 
+       x = "Ethnicity", y = "Percentage Makeup",
+       fill = "Group") +
+  theme(axis.text.x = element_text(angle = 15))
+ethnicity_plot
+#ggsave("./ethnicity_plot.png")
 
 ```
+
+Ethnicity-wise, our survey takers do not 
 
 # Limitations
 
