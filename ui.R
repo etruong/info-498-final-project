@@ -2,7 +2,9 @@ library (shiny)
 library (plotly)
 library (shinythemes)
 
-data <- read.csv ("data/prep-survey-response.csv")
+source("scripts/prep-data.R")
+source("scripts/sentiment-analysis/first_word.R")
+
 
 grade.option <- c ("All", "First Year", "Second Year", "Third Year", "Fourth Year", 
                    "Fifth year", "Graduate")
@@ -99,13 +101,65 @@ my.ui <- fluidPage (theme = shinytheme ("sandstone"),
                 p ("")
               ),
               
-              tabPanel ("Experience Microaggressions and Microcompassions"
-                # Kassy is doing this
-              ),
+              tabPanel ("Experience Microaggressions and Microcompassions",
+                        # Application title
+                        titlePanel("Mental Health and Perception of Microexperiences"),
+                        
+                        # Sidebar with a slider input for number of bins 
+                        sidebarLayout(
+                          sidebarPanel(
+                            # sliderInput("rating.health",
+                            #             label = h4("Rating of Mental Health (Poor(1) to Excellent(5))"),
+                            #             min = 1,
+                            #             max = 5,
+                            #             value = 3),
+                            
+                            checkboxGroupInput("rating.health",
+                                               label = h4("Rating of Own Mental Health"),
+                                               choices = list("Poor" = 1,
+                                                              "Kinda Poor" = 2,
+                                                              "Average" = 3,
+                                                              "Kinda Excellent" = 4,
+                                                              "Excellent" = 5),
+                                               selected = 3),
+                            
+                            radioButtons("experience", 
+                                         label = h4("Microexperience"), 
+                                         choices = list("Microaggressions" = "microaggression",
+                                                        "Microcompassions" = "microcompassion", 
+                                                        "Both" = "both"), 
+                                         selected = "both")
+                          ),
+                          
+                          # Show a plot of the generated .. thing
+                          mainPanel(
+                            plotOutput("plotly")
+                          )
+                        )              ),
               
-              tabPanel ("First Response"
-                # Hayden WordCloud
-              ),
+              tabPanel ("First Response",
+                        # Application title
+                        titlePanel("First Word Sentiment Analysis"),
+                        
+                        # Sidebar with a slider input for number of bins 
+                        sidebarLayout(
+                          sidebarPanel(
+                            sliderInput("freq_slider", label = h3("Min Frequency"), min = 0, 
+                                        max = 5, value = 0),
+                            radioButtons("magnitude_bool", label = h3("Multiply Sentiment by Magnitude"),
+                                         choices = list("True" = TRUE, "False" = FALSE), 
+                                         selected = TRUE),
+                            h3(textOutput("sentimentDescription"))
+                          ),
+                          
+                          
+                          # Show a plot of the generated distribution
+                          mainPanel(
+                            plotlyOutput("sentimentPlot"),
+                            wordcloud2Output("wordCloud")
+                          )
+                        )
+                        ),
 
               tabPanel ("Perceived Effectiveness", 
                         sidebarLayout (

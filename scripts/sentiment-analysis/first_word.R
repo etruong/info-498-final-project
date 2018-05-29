@@ -5,7 +5,7 @@ library(jsonlite)
 library(plyr)
 library(wordcloud2)
 
-source("../prep-data.R")
+source("scripts/prep-data.R")
 
 # For more information about downloading Google API credentials, check the README within
 # the sentiment-analysis folder
@@ -15,7 +15,7 @@ words <- as.data.frame(sort(trimws(tolower(data$first_word))))
 colnames(words) <- c("first_word")
 
 words_frequencies <- count(words, 'first_word')
-write(toJSON(words_frequencies, pretty = TRUE), "../sentiment-analysis/sentiment-analysis/frequencies.json")
+write(toJSON(words_frequencies, pretty = TRUE), "scripts/sentiment-analysis/sentiment-analysis/frequencies.json")
 
 google_credentials_path <- "/Users/afruitpie/Documents/Keys/Sentiment-Test-d758d2a3594d.json"
 command <- paste0('export GOOGLE_APPLICATION_CREDENTIALS="',
@@ -27,7 +27,7 @@ if (!file.exists("../../data/frequencies_with_sentiment.json")) {
   system(command)
 }
 
-sentiments <- read_json("../../data/frequencies_with_sentiment.json")
+sentiments <- read_json("data/frequencies_with_sentiment.json")
 
 
 sentiments_df = data_frame(first_word = unlist(sentiments["first_word"]),

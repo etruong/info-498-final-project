@@ -38,7 +38,7 @@ for (let wordObj of frequencies) {
 
       // Writes to a new JSON file every time because I'm bad at async lol
       fs.writeFileSync(
-        "../../data/frequencies_with_sentiment.json",
+        "data/frequencies_with_sentiment.json",
         JSON.stringify(sentiments),
         "utf8"
       );

@@ -3,12 +3,13 @@ library (ggplot2)
 library (dplyr)
 library (plotly)
 library(alluvial)
-#install.packages ("alluvial")
 library (tidyr)
-#install.packages("shinythemes")
 library (shinythemes)
 
-data <- read.csv ("data/prep-survey-response.csv", stringsAsFactors = FALSE)
+source("scripts/prep-data.R")
+
+source("scripts/sentiment-analysis/first_word.R")
+
 ethnicity.option <- sort (as.vector (unique (data$ethnicity)))
 major.option <- sort (unique (data$major))
 
@@ -175,5 +176,50 @@ server <- function (input, output, session) {
       behavior.explain <- select (behavior.explain, explanation)
     }
     return (behavior.explain)
+  })
+  
+  #################
+  # Mental Health #
+  #################
+  filtered_data_mental <- reactive ({
+    shiny::validate (
+      need (!is.null(input$rating.health), "Please select data")
+    )
+    if(input$experience != "both" & 
+       (input$rating.health == 1 | input$rating.health == 2 |
+        input$rating.health == 3 | input$rating.health == 4 |
+        input$rating.health == 5)) {
+      gathered_data <- filter(gathered_data, microexperience == input$experience) %>% 
+        filter(rating == input$rating.health)
+    }
+    gathered_data <- filter(gathered_data, ment.health == input$rating.health)
+    return(gathered_data)
+  })
+  
+  output$plotly <- renderPlot({
+    plot <- ggplot (filtered_data_mental(), aes(x = ment.health, y = rating, col = microexperience)) +
+      geom_jitter() +  #height = 0.3, width = 0.3
+      labs(x = "Rating of Own Mental Health (Poor(1) to Excellent(5))",
+           y = "Perception of Microexperience (Relatively Less(1) to Relatively More(5))",
+           col = "Microexperience, Relative to Peers") #+ 
+    #xlim(0.5, 5.5) + ylim(0.5, 5.5)
+    return(plot)
+  })
+  
+  ######################
+  # Sentiment Analysis #
+  ######################
+  
+  output$wordCloud <- renderWordcloud2(wordCloud)
+  output$sentimentPlot <- renderPlotly(sentimentPlot())
+  
+  output$sentimentDescription <- renderText(sentimentDescription())
+  
+  sentimentDescription <- reactive({
+    getDescription(input$freq_slider, input$magnitude_bool)
+  })
+  
+  sentimentPlot <- reactive({
+    getFilteredPlot(input$freq_slider, input$magnitude_bool)
   })
 }
