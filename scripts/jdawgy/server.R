@@ -33,7 +33,7 @@ server <- function(input, output) {
   output$mental_health_uplift <- renderPlotly({
     if (input$trait1 == input$trait2) {
       plot <- ggplot(filter.data(), aes_string(input$trait1)) + geom_bar(stat = "count",
-               position = "stack",aes(fill = location_see))
+               position = "stack",aes(fill = location_see)) + xlim(0.5,5.5)
       return(ggplotly(plot))
     } else {
       colNames <- unique(data$location_see)
