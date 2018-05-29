@@ -11,8 +11,8 @@ if(!require(tidyr)){install.packages("tidyr");require(tidyr)}
 if(!require(ggplot2)){install.packages("ggplot2");require(ggplot2)}
 library(plotly)
 library(shiny)
-# data <- source("../prep-data.R")
-data <- read.csv("./prep-survey-response.csv")
+source("../prep-data.R")
+# data <- read.csv("./prep-survey-response.csv")
 # Define server logic required to draw a scatterplot
 server <- function(input, output) {
   returndata <- data

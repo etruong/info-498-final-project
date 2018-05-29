@@ -68,7 +68,8 @@ my.ui <- fluidPage(
       tabsetPanel(
         type = "tabs",
         tabPanel("Graphs", plotlyOutput("mental_health_uplift")),
-        tabPanel("Analysis", p("this is a paragraph"))
+        tabPanel("Tool", tags$br(), p("This tool allows one to look at the correlation between any two ordinal variables. If the two variables are the same, then a bar chart showing distributions of each answer appears.  tags$br()Results are filterable on major and year in school.  tags$br()Results are split between where the respondant discovered the signs.")),
+        tabPanel("Analysis", p(""))
       )
     )
   )
