@@ -40,8 +40,8 @@ shinyServer(function(input, output) {
   output$plot <- renderPlot({
     plot <- ggplot (filtered_data(), aes(x = ment.health, y = rating, col = microexperience)) +
       geom_jitter() +  #height = 0.3, width = 0.3
-      labs(x = "Rating of Own Mental Health (Poor: 1, Excellent: 5",
-           y = "Perception of Microexperience (Relatively Less: 1, Relatively More: 5",
+      labs(x = "Rating of Own Mental Health (Poor: 1, Excellent: 5)",
+           y = "Perception of Microexperience (Relatively Less: 1, Relatively More: 5)",
            col = "Microexperience, Relative to Peers") + 
       xlim(0.5, 5.5) + ylim(0.5, 5.5)
     return(plot)
