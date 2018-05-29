@@ -53,8 +53,39 @@ my.ui <- fluidPage (
                                choices = c ("Mental Health", "Experience Microagression",
                                             "Experience Microcompassion")),
                   plotlyOutput ("effective.correlation")),
-        tabPanel ("Analysis", h3 ("Analysis"))
-                           )
+        tabPanel ("Analysis",
+                  h3 ("Analysis"),
+                  p ("For the most part, individuals, regardless of race or grade level, are
+                     reporting that the effectiveness of the signs are either ineffective or
+                     neither ineffective/effective. Although when analyzing the data based on
+                     the major students pursued, there are interesting results. STEM majors
+                     are reporting more that the signs are ineffective than those who are
+                     not STEM majors who are mainly reporting that the sign intervention were
+                     neither ineffective/effective. We wanted to analyze the two different
+                     major categories (STEM vs Non-STEM) because each major category covers different
+                     topics and have differing demands of their students. Though these results
+                     are likely skewed by our sample size. There are less Non-STEM major individuals
+                     taking our survey than STEM majors taking our survey. Due to this, we
+                     cannot have conclusive results."),
+                  p ("When analyzing the variables correlated with the percieved effectiveness
+                     of the signs, there was not a correlation between the microcompassion, 
+                     microaggression, and mental health variables with percieved effectiveness.
+                     This means that how much microcompassion or microaggression students experienced
+                     (in relation to their peers) is not related with how effective they percieved the
+                     signs as well as how they rated their mental health. This was not what we expected.
+                     We predicted a plausible outcome would be that the higher an individual rated
+                     their experience with microaggression the higher they rated for percieved effectiveness
+                     of the signs. We also predicted that the lower a person rated their mental health,
+                     they would percieve the signs as effective. We predicted this because in both cases, 
+                     each individual are in vulnerable states, thus they would possibly be impacted by
+                     the signs more. This was not that case."),
+                  p ("A plausible reasoning for this outcome is likely due to the fact that the data
+                     is mainly self-reported. Students may be basing their mental health on the current
+                     state that they were in while taking the survey. The question about mental health 
+                     aimed to attain data on surveyor's general mental health state. This may explain
+                     the lack of correlation between the percieved effectiveness of signs and mental health."))
+        )
+      )
     )
   )
-)
+

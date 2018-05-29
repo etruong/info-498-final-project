@@ -60,7 +60,9 @@ my.ui <- fluidPage (
                      the link that were displayed on the signs to discover what the intervention is about.
                      In attaining this information, we wanted to see if the signs initiated a discussion
                      about microaggression/microcompassion on campus and the changes it brought to people in
-                     general. The link question was asked to discover __"),
+                     general. The link question was asked to discover whether students discovered
+                     the UW Resilience Lab and pausibly become more involved and initiated connection with
+                     others."),
                   p ("In all three questions, a majority of the individuals said \"No.\"
                      This indicates that a majority of individual's behavior were not impacted by the
                      sign intervention. Though the highest question that individuals responded \"Yes\" to
@@ -80,10 +82,18 @@ my.ui <- fluidPage (
                      the memes of the signs and the hilarity of them in general. While the topics of the signs discussed 
                      was not the intention of the UW Resilience signs, it is possible that the signs allowed students a
                      topic to bond over and triggered this shared discussion of misery or college struggle. We argue that 
-                     it brought about a way to release momentarily the stress the students were experiencing in their everyday life."),
+                     it brought about a way to release momentarily the stress the students were experiencing in their everyday life.
+                     Though more research is required to back up this assumption."),
                   h4 ("Behavior Change"),
-                  p ("There were two major behavior changes individuals reported in response to the exposure
-                     of the signs: a change in attitude or reflection"))
+                  p ("There were two major topics individuals reported in response to the exposure
+                     of the signs changing their behavior: students mentioned a change in attitude or 
+                     the signs being a reminder to them. The change in attitude was the expected and 
+                     intentional aspect of this intervention; the UW resilience lab wanted to spread compassion
+                     on campus, and this would alter individual's attitude from negative to positive Although the signs
+                     as a reminder is interesting because this was not the intention of the UW resilience lab signs. It
+                     reminded students of the bigger picture, to stop worrying, and more importantly changed individual's
+                     mindset. This is likely because constant exposure to positive messages may change someone's negative
+                     outlook."))
                   )
                   )
         )
