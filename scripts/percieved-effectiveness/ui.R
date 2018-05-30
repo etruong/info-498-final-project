@@ -83,7 +83,11 @@ my.ui <- fluidPage (
                      is mainly self-reported. Students may be basing their mental health on the current
                      state that they were in while taking the survey. The question about mental health 
                      aimed to attain data on surveyor's general mental health state. This may explain
-                     the lack of correlation between the percieved effectiveness of signs and mental health."))
+                     the lack of correlation between the percieved effectiveness of signs and mental health.
+                     Also, individuals were taking this survey a month or a few weeks after the sign
+                     intervention was taken down. Therefore, students had to reflect back on their
+                     experiences. The data that was reported may be data pertaining to how the students
+                     felt at the moment they took the survey, instead of how they reacted to the signs."))
         )
       )
     )
