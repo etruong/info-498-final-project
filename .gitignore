@@ -4,6 +4,9 @@
 .Ruserdata
 .Rproj
 .idea
+.DS_Store
 info-498-final-project.Rproj
+
+scripts/sentiment-analysis/sentiment-analysis/node_modules
 
 vsls_storage
