@@ -14,7 +14,7 @@ comes to mind is upon seeing it. This is meant to gauge people's first reactions
 and to show this we created a word cloud. Two sections follow: Demographics and Resilience Lab Signs.
 
 The demographics section is meant to gauge the demographics of our sample, and to determine the
-possible need for weights. We ask about gender, ethnicy, age, year in school, major/intended major,
+possible need for weights. We ask about gender, ethnicity, age, year in school, major/intended major,
 minor, own rating of mental health, experience regarding microaggressions and microcompassions
 relative to peers, and whether or not they browse UW's main Facebook meme page: UW Teens for Boundless
 Memes. This section ends by asking if the survey taker has seen the Resilience Lab signs, and
@@ -28,7 +28,7 @@ behavior changed and how, if they've talked to others about the signs and what t
 finally, how they rate the effectiveness of the signs in terms of promoting microcompassions on campus.
 
 Both sections are important as we used them to draw relationships among different factors within 
-each of the sections (ethnicity versus mental health, rating of mental health versus exerpience with 
+each of the sections (ethnicity versus mental health, rating of mental health versus experience with 
 microaggressions, feelings of being uplifted versus rating of signs' effectiveness at promoting
 microcompassions) but also among different factors between the two (major versus rating of signs' 
 effectiveness at promoting microcompassions, rating of mental health versus feelings of being

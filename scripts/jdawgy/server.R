@@ -11,8 +11,8 @@ if(!require(tidyr)){install.packages("tidyr");require(tidyr)}
 if(!require(ggplot2)){install.packages("ggplot2");require(ggplot2)}
 library(plotly)
 library(shiny)
-# data <- source("../prep-data.R")
-data <- read.csv("./prep-survey-response.csv")
+source("../prep-data.R")
+# data <- read.csv("./prep-survey-response.csv")
 # Define server logic required to draw a scatterplot
 server <- function(input, output) {
   returndata <- data
@@ -33,7 +33,7 @@ server <- function(input, output) {
   output$mental_health_uplift <- renderPlotly({
     if (input$trait1 == input$trait2) {
       plot <- ggplot(filter.data(), aes_string(input$trait1)) + geom_bar(stat = "count",
-               position = "stack",aes(fill = location_see))
+               position = "stack",aes(fill = location_see)) + xlim(0.5,5.5)
       return(ggplotly(plot))
     } else {
       colNames <- unique(data$location_see)

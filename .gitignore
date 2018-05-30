@@ -4,7 +4,11 @@
 .Ruserdata
 .Rproj
 .idea
+.DS_Store
 info-498-final-project.Rproj
 .DS_Store
 
+scripts/sentiment-analysis/sentiment-analysis/node_modules
+
 vsls_storage
+scripts/sentiment-analysis/sentiment-analysis/node_modules/nanomatch/lib/.DS_Store
