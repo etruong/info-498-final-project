@@ -194,6 +194,10 @@ my.ui <- fluidPage (theme = shinytheme ("sandstone"),
                                             # Show a plot of the generated distribution
                                             mainPanel(
                                               plotlyOutput("sentimentPlot"),
+                                              tags$br(),
+                                              p("This application was created using the Google Natural Language processor and a list of the first word everyone surveyed thought of when seeing a Resilience Lab sign. Sentiment scores closer to 1 have very positive connotations, and sentiment scores closer to -1 have very negative connotations."),
+                                              tags$br(),
+                                              p("The average value is often very close to 0 in this case, which means that the on average, people did not have a strong positive or negative response to the signs."),
                                               wordcloud2Output("wordCloud")
                                             )
                                           )
@@ -328,10 +332,9 @@ my.ui <- fluidPage (theme = shinytheme ("sandstone"),
                                           )
                                 ),
                                 
-                                tabPanel ("Conclusions"
-                                          # What we got from the data
-                                          # What we recommend for the future of the Resilience Lab
-                                          # (or other intervention entitities on campus)
+                                tabPanel ("Conclusions",
+                                          uiOutput("conclusion_tab")
+                                          
                                 )
                     )
 )

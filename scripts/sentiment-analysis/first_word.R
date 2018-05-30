@@ -20,9 +20,9 @@ write(toJSON(words_frequencies, pretty = TRUE), "scripts/sentiment-analysis/sent
 google_credentials_path <- "/Users/afruitpie/Documents/Keys/Sentiment-Test-d758d2a3594d.json"
 command <- paste0('export GOOGLE_APPLICATION_CREDENTIALS="',
                   google_credentials_path,
-                  '" && node sentiment-analysis/index.js')
+                  '" && node sentiment-analysis/sentiment-analysis/index.js')
 
-if (!file.exists("../../data/frequencies_with_sentiment.json")) {
+if (!file.exists("data/frequencies_with_sentiment.json")) {
   cat("Uh oh, the sentiment analysis is not done! This might take a minute to finish...")
   system(command)
 }
@@ -60,6 +60,7 @@ getDescription <- function(min_freq, magnitude_bool) {
   if (magnitude_bool) {
     tempSentiments$sentiment <- tempSentiments$sentiment * tempSentiments$magnitude
   }
-  description <- paste("For the", nrow(tempSentiments), "words that are selected, the average sentiment is", sum(tempSentiments$sentiment), ". Values closer to 1 are more positive, 'happy' words, and words closer to -1 are 'unhappy' words.") 
+  avg <- (sum(tempSentiments$sentiment) / nrow(tempSentiments)) 
+  description <- paste("For the", nrow(tempSentiments), "words that are selected, the average sentiment is", avg,". Values closer to 1 are more positive, 'happy' words, and words closer to -1 are 'unhappy' words.") 
   description
 }

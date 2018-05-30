@@ -26,6 +26,10 @@ server <- function (input, output, session) {
     HTML(markdown::markdownToHTML(knit('scripts/methods-tab/methods_tab.Rmd', quiet = TRUE)))
   })
   
+  output$conclusion_tab <- renderUI({
+    HTML(markdown::markdownToHTML(knit('scripts/conclusion/conclusion.Rmd', quiet = TRUE)))
+  })
+  
   # EFFECTIVENSS #
   ################
   filter.data <- reactive ({
