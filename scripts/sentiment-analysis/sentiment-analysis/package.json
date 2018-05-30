@@ -1,0 +1,14 @@
+{
+  "name": "sentiment-analysis",
+  "version": "1.0.0",
+  "description": "Sentiment analysis scripts for the final population health informatics class ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Hayden Hong",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/language": "^1.2.0"
+  }
+}
