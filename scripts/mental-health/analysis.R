@@ -35,4 +35,4 @@ plot <-
        y = "Perception of Microexperience (Less: 1, More: 5)",
        col = "Microexperience, Relative to Peers")
 
-plotly <- ggplotly(plot)
+mental_plot <- ggplotly(plot)

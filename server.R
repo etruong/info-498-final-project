@@ -383,4 +383,37 @@ server <- function (input, output, session) {
       return (ggplotly (plot))
     }
   })
+  
+  # last minute BS for the broken tab
+  # ethnicity <- c("Caucasian", "Asian", "International", "Latino", "Two or more races", "Black/African", "Prefer not to answer", "Pacific Islander", "American Indian/Alaska Native")
+  # uw.percentage <- c(40.3, 24.6, 14.6, 8.1, 7.4, 3.0, 1.1, 0.5, 0.4)
+  # uw_ethnic_makeup <- data.frame(ethnicity, uw.percentage, stringsAsFactors = FALSE)
+  # 
+  # survey_ethnic_makeup <- select(data, timestamp, ethnicity)
+  # num_survey_takers <- nrow(survey_ethnic_makeup)
+  # 
+  # grouped_survey_ethnic_makeup <- group_by(survey_ethnic_makeup, ethnicity) %>%
+  #    summarize(n = n()) %>%
+  #    mutate(survey.percentage = round((n*100/num_survey_takers), digits = 1)) %>%
+  #    select(ethnicity, survey.percentage)
+  # 
+  # merged_ethnicities <- left_join(uw_ethnic_makeup, grouped_survey_ethnic_makeup)
+  # merged_ethnicities[is.na(merged_ethnicities)] <- 0
+  # colnames(merged_ethnicities) <- c("ethnicity", "UW", "Survey")
+  # merged_ethnicities <- gather(merged_ethnicities, "group", "percentage.makeup", 2:3)
+  # 
+  # ethnicity_plot <- ggplot(merged_ethnicities,
+  #                          aes(x = ethnicity,
+  #                              y = percentage.makeup,
+  #                              fill = group)) +
+  #   geom_bar(stat = "identity", position = "dodge") +
+  #   labs(title = "Ethnicity Breakdown UW Student Population vs. Survey Sample",
+  #        x = "Ethnicity", y = "Percentage Makeup",
+  #        fill = "Group") +
+  #   theme(axis.text.x = element_text(angle = 15))
+
+  output$ethnicity_plot <- renderPlot({ethnicity_plot})
+  #output$
 }
+
+
