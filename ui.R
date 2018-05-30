@@ -1,6 +1,7 @@
 library (shiny)
 library (plotly)
 library (shinythemes)
+library(knitr)
 
 source("scripts/prep-data.R")
 source("scripts/sentiment-analysis/first_word.R")
@@ -67,40 +68,72 @@ my.ui <- fluidPage (theme = shinytheme ("sandstone"),
                                                     p (""))
                                 ),
                                 tabPanel ("Methods",
-                                          h1("Survey Development and Design"),
-                                          tags$img (class = "sign", src = "survey-sign-1.jpg", width = 300),
-                                          p("Our survey starts out with the picture above, and asks survey takers what the first word that
-                  comes to mind is upon seeing it. This is meant to gauge people's first reactions to the signs,
-                  and to show this we created a word cloud. Two sections follow: Demographics and Resilience Lab Signs."),
-                                          p("The demographics section is meant to gauge the demographics of our sample, and to determine the
-                  possible need for weights. We ask about gender, ethnicy, age, year in school, major/intended major,
-                  minor, own rating of mental health, experience regarding microaggressions and microcompassions
-                  relative to peers, and whether or not they browse UW's main Facebook meme page: UW Teens for Boundless
-                  Memes. This section ends by asking if the survey taker has seen the Resilience Lab signs, and
-                  if they answer no, the survey closes as the rest of the questions are not applicable to these people."),
-                                          p("The Resilience Lab Signs section is meant to further understand the survey taker's perceptions of, 
-                  reactions to, and behavioral change from the signs. Here, we ask about where the people first saw 
-                  the signs, whether or not they followed the website provided (resilience.uw.edu) on the signs, 
-                  whether or not their feelings changed and how, how uplifted or discouraged they felt, if their 
-                  behavior changed and how, if they've talked to others about the signs and what they talked about, and
-                  finally, how they rate the effectiveness of the signs in terms of promoting microcompassions on campus."),
-                                          p("Both sections are important as we used them to draw relationships among different factors within 
-                  each of the sections (ethnicity versus mental health, rating of mental health versus exerpience with 
-                  microaggressions, feelings of being uplifted versus rating of signs' effectiveness at promoting
-                  microcompassions) but also among different factors between the two (major versus rating of signs' 
-                  effectiveness at promoting microcompassions, rating of mental health versus feelings of being
-                  uplifted)."),
-                                          h1("Population and Sample Demographics"),
-                                          p("The population of interest is the UW student community, as they are the main target of the 
-                  Resilience Lab signs. In terms of keeping our sample representative of the UW student population,
-                  we care most about two main demographical dimensions: ethnicity and major. The following tables show 
-                  UW's makeup and theblah "), #add
-                                          h1("Limitations"),
-                                          p("The somethign something blah"), #add 
-                                          p ("")
+                                          uiOutput("methods_tab")
                                 ),
                                 
-                                tabPanel ("Experience Microaggressions and Microcompassions",
+                                tabPanel ("Mental Health",
+                                          titlePanel("Mental Health and Personal Uplifting Effect"),
+                                          sidebarLayout(
+                                            sidebarPanel(
+                                              checkboxGroupInput("year", # server id
+                                                                 "Year:", # name
+                                                                 choices = c('First Year','Second Year','Third Year','Fourth Year','Fifth Year','Graduate'),
+                                                                 selected = c('First Year','Second Year','Third Year','Fourth Year','Fifth Year','Graduate')),
+                                              selectInput("major",
+                                                          "Major:",
+                                                          choices=c("All", "Informatics", "Computer Science & Engineering", "Business Administration", "Biochemistry", "Philosophy", "Economics", "Statistics", "Physics", "Civil Engineering", "Chemical Engineering", "Anthropology: Medical Anth & Global Hlth", "Education", "Industrial Design", "Sociology", "Psychology", "Undecided", "Electrical Engineering", "Mechanical Engineering", "Biology", "Spanish", "Public Health", "English", "Geography", "International Studies", "Accounting", "Human-Centered Design & Engineering", "Geophysics", "Pre Nursing", "Neuroscience", "Aquatic and Fishery Sciences", "Bioengineering", "Speech and Hearing Sciences", "Neurobiology", "Marketing", "Mathematics", "Communication", "Law, Societies, and Justice", "Aeronautics & Astronautics", "Political Science")),
+                                              radioButtons("trait1",
+                                                           label = "X-Axis Trait:",
+                                                           choices = list("Mental Health" = "mental_health", "Microagression" = "microaggression",
+                                                                          "Microcompassion" = "microcompassion", "Uplift" = "uplift",
+                                                                          "Discouragement" = "discourage", "Effectiveness" = "effective"),
+                                                           selected = "uplift"),
+                                              # Choose trait two
+                                              radioButtons("trait2",
+                                                           label = "Y-Axis Trait:",
+                                                           choices = list("Mental Health" = "mental_health", "Microagression" = "microaggression",
+                                                                          "Microcompassion" = "microcompassion", "Uplift" = "uplift",
+                                                                          "Discouragement" = "discourage", "Effectiveness" = "effective"),
+                                                           selected = "mental_health")
+                                            ),
+                                            mainPanel(
+                                              tabsetPanel(
+                                                type = "tabs",
+                                                tabPanel("Graphs", plotlyOutput("mental_health_uplift"),
+                                                         tags$br(), 
+                                                         p("This tool allows one to look at the relationship between any two ordinal variables."),
+                                                         tags$br(),
+                                                         p("If the two variables are the same, then a bar chart showing distributions of each answer appears."),
+                                                         tags$br(),
+                                                         p("Results are filterable on major and year in school."),
+                                                         tags$br(),
+                                                         p("Results are split between where the respondant discovered the signs.")),
+                                                tabPanel("Analysis", 
+                                                         tags$br(),
+                                                         p("Diving into the various relationships between variables shows some interesting patterns in how students perceive the Resilience signs.  All observations noted were taken when considering the entire student population, because looking at subsets of the data by filtering year or major reduced the sample size by too much. However, when considering the entire population these patterns emerge:"),
+                                                         tags$br(),
+                                                         tags$li("People who report higher mental health typically see more microcompassions."),
+                                                         tags$li("People who report higher mental health typically see more microaggressions."),
+                                                         tags$li("Most people report seeing few microaggressions."),
+                                                         tags$br(),
+                                                         p("These three observations show that people with higher mental health may be more aware of their community and the impact of small actions towards groups."),
+                                                         tags$br(),
+                                                         tags$li("People who see more microcompassions see less microaggressions and vice versa"),
+                                                         tags$br(),
+                                                         p("This observation shows that the power of positive thinking/observation may protect groups."),
+                                                         tags$br(),
+                                                         tags$li("People who see more microagressions perceived the signs as uplifting."),
+                                                         tags$li("People who see more microcompassions tend to see higher effectiveness."),
+                                                         tags$li("If the signs were uplifting they were more likely to be perceived as effective."),
+                                                         tags$br(),
+                                                         p("These two observations show that the signs are an effective way to reaching those affected by microaggressions, and that those who view the signs as positive have a better outlook on their community.
+                                                           "))
+                                                         )
+                                              )
+                                            )
+                                          ),
+                                
+                                tabPanel ("Microagg. & Microcomp.",
                                           # Application title
                                           titlePanel("Mental Health and Perception of Microexperiences"),
                                           
@@ -132,12 +165,17 @@ my.ui <- fluidPage (theme = shinytheme ("sandstone"),
                                             
                                             # Show a plot of the generated .. thing
                                             mainPanel(
-                                              plotOutput("plotly")
+                                              plotOutput("plotly"),
+                                              p("This visualization shows our survey takers' rating of own their own mental health (1 being poor and 5 being excellent) versus their perception of how much microaggression and microcompassion they believe they experience relative to their peers."),
+                                              tags$br(),
+                                               p("Regarding experience with microaggressions, responses seem very spread out and does not seem to have a discernable trend."),
+                                              tags$br(),
+                                               p("Regarding experience with microcompassions, responses are clustered towards higher perceptions of microexperiences/experiencing relatively more microcompassions than their peers. This could mean that our survey takers are more optimistic in terms of how much kindness they receive relative to their peers (our microcompassions question is framed in terms of how much relative kindness they receive). Further, none of the students who answered 1 or 2 for the microcompassion question/believe they experience less kindness than their peers rate their mental health as excellent. ")
                                             )
                                             
                                           )),
                                 
-                                tabPanel ("Sentiment Analysis",
+                                tabPanel ("Sentiment",
                                           # Application title
                                           titlePanel("First Word Sentiment Analysis"),
                                           
@@ -161,7 +199,7 @@ my.ui <- fluidPage (theme = shinytheme ("sandstone"),
                                           )
                                 ),
                                 
-                                tabPanel ("Perceived Effectiveness", 
+                                tabPanel ("Effectiveness", 
                                           sidebarLayout (
                                             sidebarPanel (
                                               p ("Manipulate the data visualization by using the widgets below."),

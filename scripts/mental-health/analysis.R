@@ -7,7 +7,7 @@ library(tidyr)
 library(reshape2)
 library(plotly)
 
-source("data/prep-data.R")
+# source("data/prep-data.R")
 # data <- read.csv("./ResilienceLabSignSurvey.csv")
 prepped_data <- 
   select(data, 

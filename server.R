@@ -5,10 +5,12 @@ library (plotly)
 library(alluvial)
 library (tidyr)
 library (shinythemes)
+library(knitr)
+if(!require(data.table)){install.packages("data.table");require(data.table)}
 
 source("scripts/prep-data.R")
-
 source("scripts/sentiment-analysis/first_word.R")
+source("scripts/mental-health/analysis.R")
 
 ethnicity.option <- sort (as.vector (unique (data$ethnicity)))
 major.option <- sort (unique (data$major))
@@ -17,7 +19,13 @@ qualitative.data <-
   read.csv ("data/qualitative-data.csv", stringsAsFactors = FALSE)
 
 server <- function (input, output, session) {
-  ################
+  ##################
+  # Markdown Files #
+  ##################
+  output$methods_tab <- renderUI({
+    HTML(markdown::markdownToHTML(knit('scripts/methods-tab/methods_tab.Rmd', quiet = TRUE)))
+  })
+  
   # EFFECTIVENSS #
   ################
   filter.data <- reactive ({
@@ -293,12 +301,11 @@ server <- function (input, output, session) {
           input$rating.health == 3 | input$rating.health == 4 |
           input$rating.health == 5
         )) {
-      gathered_data <-
-        filter(gathered_data, microexperience == input$experience) %>%
+      gathered_data <- filter(gathered_data, microexperience == input$experience) %>%
         filter(rating == input$rating.health)
     }
-    gathered_data <-
-      filter(gathered_data, ment.health == input$rating.health)
+    gathered_data <- filter(gathered_data, ment.health == input$rating.health)
+    
     return(gathered_data)
   })
   
@@ -329,5 +336,47 @@ server <- function (input, output, session) {
   
   sentimentPlot <- reactive({
     getFilteredPlot(input$freq_slider, input$magnitude_bool)
+  })
+  
+  ####################
+  # Jared's whatever #
+  ####################
+  
+  returndata <- data
+  filter.data <- reactive ({
+    if(input$major == 'All'){
+      returndata <- data
+    } else {
+      returndata <- (filter (data, major %in% input$major))  
+    }
+    if(is.null(input$year)){
+      return (returndata)
+    } else {
+      return (filter (returndata, school %in% input$year ))
+    }
+    return (returndata)
+  })
+  
+  output$mental_health_uplift <- renderPlotly({
+    if (input$trait1 == input$trait2) {
+      plot <- ggplot(filter.data(), aes_string(input$trait1)) + geom_bar(stat = "count",
+                                                                         position = "stack",aes(fill = location_see)) + xlim(0.5,5.5)
+      return(ggplotly(plot))
+    } else {
+      colNames <- unique(data$location_see)
+      as.vector(levels(unique(data$location_see)))[unique(data$location_see)]
+      p <- plotly::plot_ly()
+      # xlab <- input$trait1 + ' Rating (5 is High)'
+      xlab <- paste0(input$trait1, " Rating (1 to 5)")
+      ylab <- paste0(input$trait2, " Rating (1 to 5)")
+      titlelab <- paste0(input$trait1, " vs. ", input$trait2)
+      # titlelab <- paste0(input$trait1, " vs. " + input$trait2)
+      plot <- ggplot(filter.data(), aes_string(x=input$trait1, y=input$trait2, color="location_see")) +
+        geom_point(size=2, shape=23) + geom_jitter(width=0.3) + xlim(0.5,5.5)+ylim(0.5,5.5) + 
+        labs(x = xlab, y= ylab, title = titlelab)
+      # theme(title=input$trait1)
+      # xlab("Uplift Rating (5 is High)") + ylab("Mental Health Rating (5 is High") + ggtitle("Uplift vs Mental Health")
+      return (ggplotly (plot))
+    }
   })
 }
